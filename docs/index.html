@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SiteCalc — Construction Calculator</title>
+<meta name="description" content="Offline stair, rafter, concrete and deck calculators with live diagrams. No account, no permissions, works with no signal.">
+<style>
+  :root { color-scheme: light dark; --brand: #1d5df0; }
+  * { box-sizing: border-box; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 45rem; margin: 0 auto; padding: 3.5rem 1.25rem 4rem;
+    color: #101828; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e7eaee; background: #12151a; }
+    a { color: #7fa9ff; }
+    .card { background: #181c23; border-color: #2c333d; }
+    .mark { background: #2f6bf3; }
+    :root { --brand: #7fa9ff; }
+  }
+  .mark {
+    width: 56px; height: 56px; border-radius: 14px; background: #1d5df0;
+    display: grid; place-items: center; margin-bottom: 1.25rem;
+  }
+  .mark svg { display: block; }
+  h1 { font-size: 2.1rem; letter-spacing: -0.03em; margin: 0 0 .35rem; }
+  .tag { color: #667085; font-size: 1.05rem; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  a { color: var(--brand); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .3rem 0; }
+  .links { display: flex; flex-wrap: wrap; gap: .75rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+  .links a {
+    display: inline-block; padding: .6rem 1.1rem; border-radius: 8px;
+    border: 1px solid #d0d5dd; text-decoration: none; font-weight: 600;
+  }
+  @media (prefers-color-scheme: dark) { .links a { border-color: #2c333d; } }
+  .card {
+    background: #f8fafc; border: 1px solid #e4e7ec; border-radius: 10px;
+    padding: 1rem 1.25rem; margin: 2rem 0;
+  }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #e4e7ec; color: #667085; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #2c333d; } }
+</style>
+</head>
+<body>
+
+<div class="mark" aria-hidden="true">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff"
+       stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M3 21v-4h4v-4h4V9h4V5h4"/>
+  </svg>
+</div>
+
+<h1>SiteCalc</h1>
+<p class="tag">Offline construction &amp; carpentry calculators with live diagrams.</p>
+
+<p>
+  Draw your stringer before you cut it. SiteCalc is a stair calculator, rafter
+  calculator, concrete calculator and deck calculator in one Android app — and
+  every answer comes with a to-scale diagram, in feet, inches and real
+  fractions.
+</p>
+
+<p>
+  Built for the job site: <strong>no account, no runtime permissions, and it
+  works offline</strong> in a basement with no signal. Nothing you type ever
+  leaves your phone.
+</p>
+
+<p>
+  SiteCalc is free and supported by ads. There is no banner sitting over your
+  work — just an occasional full-screen ad between calculators, and an optional
+  short ad when you share a cut list. Skip that one and the share still works.
+</p>
+
+<h2>The calculators</h2>
+<ul>
+  <li>Stairs — stringers, riser height, tread depth, total run and stair angle</li>
+  <li>Rafter &amp; Roof — rafter length, plumb and seat cuts, pitch, shingle bundles</li>
+  <li>Concrete — slabs, footings and tube forms, in cubic yards and bags</li>
+  <li>Deck — decking boards, rows, joists and screws</li>
+  <li>Fence — posts, pickets, panels, rails and concrete per hole</li>
+  <li>Board Feet, Drywall, Paint, Tile &amp; Flooring, Wall Framing</li>
+</ul>
+
+<ul class="links">
+  <li><a href="privacy.html">Privacy Policy</a></li>
+  <li><a href="terms.html">Terms of Service</a></li>
+</ul>
+
+<div class="card">
+  <strong>Estimates only.</strong> SiteCalc provides material and layout
+  estimates for planning. Results are not engineering or code advice. Building
+  codes vary by location — verify requirements with your local authority, and
+  always confirm measurements before cutting or ordering.
+</div>
+
+<footer>
+  Support: <a href="mailto:support@appsflood.com">support@appsflood.com</a>
+</footer>
+
+</body>
+</html>
